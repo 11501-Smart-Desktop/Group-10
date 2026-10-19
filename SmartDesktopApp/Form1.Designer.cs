@@ -34,12 +34,12 @@
             this.lblSubtitle = new System.Windows.Forms.Label();
             this.lblMainTitle = new System.Windows.Forms.Label();
             this.panel2 = new System.Windows.Forms.Panel();
-            this.label2 = new System.Windows.Forms.Label();
+            this.lblCopyright = new System.Windows.Forms.Label();
             this.lblStatus = new System.Windows.Forms.Label();
             this.panel3 = new System.Windows.Forms.Panel();
+            this.btnHome = new System.Windows.Forms.Button();
             this.btnModule10 = new System.Windows.Forms.Button();
             this.btnModule9 = new System.Windows.Forms.Button();
-            this.btnHome = new System.Windows.Forms.Button();
             this.btnModule8 = new System.Windows.Forms.Button();
             this.btnModule7 = new System.Windows.Forms.Button();
             this.btnModule6 = new System.Windows.Forms.Button();
@@ -47,8 +47,8 @@
             this.btnModule4 = new System.Windows.Forms.Button();
             this.btnModule3 = new System.Windows.Forms.Button();
             this.btnModule2 = new System.Windows.Forms.Button();
-            this.mainContentPanel = new System.Windows.Forms.Panel();
             this.btnModule1 = new System.Windows.Forms.Button();
+            this.mainContentPanel = new System.Windows.Forms.Panel();
             this.panel1.SuspendLayout();
             this.panel2.SuspendLayout();
             this.panel3.SuspendLayout();
@@ -93,10 +93,11 @@
             this.lblSubtitle.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
             this.lblSubtitle.Font = new System.Drawing.Font("微軟正黑體", 10.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(136)));
             this.lblSubtitle.ForeColor = System.Drawing.SystemColors.ButtonHighlight;
-            this.lblSubtitle.Location = new System.Drawing.Point(589, 13);
+            this.lblSubtitle.Location = new System.Drawing.Point(598, 9);
             this.lblSubtitle.Name = "lblSubtitle";
             this.lblSubtitle.Size = new System.Drawing.Size(490, 22);
             this.lblSubtitle.TabIndex = 1;
+            this.lblSubtitle.Text = "大灣高中 × 三民高中 聯名專案";
             this.lblSubtitle.TextAlign = System.Drawing.ContentAlignment.MiddleRight;
             // 
             // lblMainTitle
@@ -113,7 +114,7 @@
             // panel2
             // 
             this.panel2.BackColor = System.Drawing.SystemColors.Highlight;
-            this.panel2.Controls.Add(this.label2);
+            this.panel2.Controls.Add(this.lblCopyright);
             this.panel2.Controls.Add(this.lblStatus);
             this.panel2.Dock = System.Windows.Forms.DockStyle.Bottom;
             this.panel2.Location = new System.Drawing.Point(0, 643);
@@ -121,17 +122,17 @@
             this.panel2.Size = new System.Drawing.Size(1091, 30);
             this.panel2.TabIndex = 1;
             // 
-            // label2
+            // lblCopyright
             // 
-            this.label2.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Bottom | System.Windows.Forms.AnchorStyles.Right)));
-            this.label2.AutoSize = true;
-            this.label2.Font = new System.Drawing.Font("Arial Narrow", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label2.ForeColor = System.Drawing.SystemColors.Info;
-            this.label2.Location = new System.Drawing.Point(923, 6);
-            this.label2.Name = "label2";
-            this.label2.Size = new System.Drawing.Size(165, 20);
-            this.label2.TabIndex = 1;
-            this.label2.Text = "2026 Cross-Campus Project";
+            this.lblCopyright.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Bottom | System.Windows.Forms.AnchorStyles.Right)));
+            this.lblCopyright.AutoSize = true;
+            this.lblCopyright.Font = new System.Drawing.Font("Arial Narrow", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lblCopyright.ForeColor = System.Drawing.SystemColors.Info;
+            this.lblCopyright.Location = new System.Drawing.Point(923, 6);
+            this.lblCopyright.Name = "lblCopyright";
+            this.lblCopyright.Size = new System.Drawing.Size(165, 20);
+            this.lblCopyright.TabIndex = 1;
+            this.lblCopyright.Text = "2026 Cross-Campus Project";
             // 
             // lblStatus
             // 
@@ -164,6 +165,19 @@
             this.panel3.Size = new System.Drawing.Size(200, 573);
             this.panel3.TabIndex = 2;
             // 
+            // btnHome
+            // 
+            this.btnHome.Dock = System.Windows.Forms.DockStyle.Bottom;
+            this.btnHome.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.btnHome.ForeColor = System.Drawing.SystemColors.ButtonHighlight;
+            this.btnHome.Location = new System.Drawing.Point(0, 523);
+            this.btnHome.Name = "btnHome";
+            this.btnHome.Size = new System.Drawing.Size(200, 50);
+            this.btnHome.TabIndex = 8;
+            this.btnHome.Text = " 回到首頁";
+            this.btnHome.UseVisualStyleBackColor = true;
+            this.btnHome.Click += new System.EventHandler(this.btnHome_Click);
+            // 
             // btnModule10
             // 
             this.btnModule10.Dock = System.Windows.Forms.DockStyle.Top;
@@ -173,7 +187,7 @@
             this.btnModule10.Name = "btnModule10";
             this.btnModule10.Size = new System.Drawing.Size(200, 50);
             this.btnModule10.TabIndex = 10;
-            this.btnModule10.Text = "第10組：XXX";
+            this.btnModule10.Text = "第10組：口袋單字卡";
             this.btnModule10.UseVisualStyleBackColor = true;
             // 
             // btnModule9
@@ -185,21 +199,8 @@
             this.btnModule9.Name = "btnModule9";
             this.btnModule9.Size = new System.Drawing.Size(200, 50);
             this.btnModule9.TabIndex = 9;
-            this.btnModule9.Text = "第9組：XXX";
+            this.btnModule9.Text = "第9組：硬體狀態監控";
             this.btnModule9.UseVisualStyleBackColor = true;
-            // 
-            // btnHome
-            // 
-            this.btnHome.Dock = System.Windows.Forms.DockStyle.Bottom;
-            this.btnHome.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.btnHome.ForeColor = System.Drawing.SystemColors.ButtonHighlight;
-            this.btnHome.Location = new System.Drawing.Point(0, 523);
-            this.btnHome.Name = "btnHome";
-            this.btnHome.Size = new System.Drawing.Size(200, 50);
-            this.btnHome.TabIndex = 8;
-            this.btnHome.Text = "Home";
-            this.btnHome.UseVisualStyleBackColor = true;
-            this.btnHome.Click += new System.EventHandler(this.btnHome_Click);
             // 
             // btnModule8
             // 
@@ -210,7 +211,7 @@
             this.btnModule8.Name = "btnModule8";
             this.btnModule8.Size = new System.Drawing.Size(200, 50);
             this.btnModule8.TabIndex = 7;
-            this.btnModule8.Text = "第8組：XXX";
+            this.btnModule8.Text = "第8組：智慧密碼產生";
             this.btnModule8.UseVisualStyleBackColor = true;
             // 
             // btnModule7
@@ -222,7 +223,7 @@
             this.btnModule7.Name = "btnModule7";
             this.btnModule7.Size = new System.Drawing.Size(200, 50);
             this.btnModule7.TabIndex = 6;
-            this.btnModule7.Text = "第7組：XXX";
+            this.btnModule7.Text = " 第7組：天氣空氣看板";
             this.btnModule7.UseVisualStyleBackColor = true;
             // 
             // btnModule6
@@ -234,7 +235,7 @@
             this.btnModule6.Name = "btnModule6";
             this.btnModule6.Size = new System.Drawing.Size(200, 50);
             this.btnModule6.TabIndex = 5;
-            this.btnModule6.Text = "第6組：XXX";
+            this.btnModule6.Text = "第6組：2048 小遊戲";
             this.btnModule6.UseVisualStyleBackColor = true;
             // 
             // btnModule5
@@ -246,7 +247,7 @@
             this.btnModule5.Name = "btnModule5";
             this.btnModule5.Size = new System.Drawing.Size(200, 50);
             this.btnModule5.TabIndex = 4;
-            this.btnModule5.Text = "第5組：XXX";
+            this.btnModule5.Text = "第5組：零用錢管理";
             this.btnModule5.UseVisualStyleBackColor = true;
             // 
             // btnModule4
@@ -258,7 +259,7 @@
             this.btnModule4.Name = "btnModule4";
             this.btnModule4.Size = new System.Drawing.Size(200, 50);
             this.btnModule4.TabIndex = 3;
-            this.btnModule4.Text = "第4組：XXX";
+            this.btnModule4.Text = "第4組：成績數據分析";
             this.btnModule4.UseVisualStyleBackColor = true;
             // 
             // btnModule3
@@ -270,7 +271,7 @@
             this.btnModule3.Name = "btnModule3";
             this.btnModule3.Size = new System.Drawing.Size(200, 50);
             this.btnModule3.TabIndex = 2;
-            this.btnModule3.Text = "第3組：XXX";
+            this.btnModule3.Text = "第3組：生活待辦清單";
             this.btnModule3.UseVisualStyleBackColor = true;
             // 
             // btnModule2
@@ -282,17 +283,9 @@
             this.btnModule2.Name = "btnModule2";
             this.btnModule2.Size = new System.Drawing.Size(200, 50);
             this.btnModule2.TabIndex = 1;
-            this.btnModule2.Text = "第2組：XXX";
+            this.btnModule2.Text = "第2組：專注計時器";
             this.btnModule2.UseVisualStyleBackColor = true;
             this.btnModule2.Click += new System.EventHandler(this.btnModule2_Click);
-            // 
-            // mainContentPanel
-            // 
-            this.mainContentPanel.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.mainContentPanel.Location = new System.Drawing.Point(200, 70);
-            this.mainContentPanel.Name = "mainContentPanel";
-            this.mainContentPanel.Size = new System.Drawing.Size(891, 573);
-            this.mainContentPanel.TabIndex = 3;
             // 
             // btnModule1
             // 
@@ -303,9 +296,17 @@
             this.btnModule1.Name = "btnModule1";
             this.btnModule1.Size = new System.Drawing.Size(200, 50);
             this.btnModule1.TabIndex = 0;
-            this.btnModule1.Text = "教學示範區";
+            this.btnModule1.Text = "第1組：教學示範區";
             this.btnModule1.UseVisualStyleBackColor = true;
             this.btnModule1.Click += new System.EventHandler(this.btnModule1_Click_1);
+            // 
+            // mainContentPanel
+            // 
+            this.mainContentPanel.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.mainContentPanel.Location = new System.Drawing.Point(200, 70);
+            this.mainContentPanel.Name = "mainContentPanel";
+            this.mainContentPanel.Size = new System.Drawing.Size(891, 573);
+            this.mainContentPanel.TabIndex = 3;
             // 
             // Form1
             // 
@@ -345,7 +346,7 @@
         private System.Windows.Forms.Label lblSubtitle;
         private System.Windows.Forms.Label lblMainTitle;
         private System.Windows.Forms.Panel panel4;
-        private System.Windows.Forms.Label label2;
+        private System.Windows.Forms.Label lblCopyright;
         private System.Windows.Forms.Label lblStatus;
         private System.Windows.Forms.Button btnHome;
         private System.Windows.Forms.ComboBox cboLanguages;
