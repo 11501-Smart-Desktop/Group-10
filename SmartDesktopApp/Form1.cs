@@ -25,7 +25,7 @@ namespace SmartDesktopApp
             string systemLang = System.Globalization.CultureInfo.CurrentCulture.Name;
 
             // 3. 決定要載入哪一個語系檔
-            string finalLang = "en-US"; // 預設為英文 (Fallback)
+            string finalLang = "zh-TW"; // 預設為繁體中文英文
 
             // 檢查我們有沒有對應系統語系的 JSON 檔 (例如有無 zh-TW.json)
             // 這裡我們比對 AvailableLanguages 字典裡的 Value (檔案名稱)
@@ -73,6 +73,7 @@ namespace SmartDesktopApp
 
         private void btnHome_Click(object sender, EventArgs e)
         {
+            // 載入首頁模組
             ShowModule(new UC_Home());
             lblStatus.Text = "● 系統就緒 | 請選擇功能模組";
         }
@@ -157,6 +158,7 @@ namespace SmartDesktopApp
         {
             // 1. 執行切換到老師的教學示範模組
             ShowModule(new UC_Group1());
+            //lblStatus.Text = "● 目前正在執行：第1組 - 教學示範區";
 
             // 2. 同步更新狀態列文字（建議也用多語系 Key）
             lblStatus.Text = Core.LanguageManager.GetString("LBL_GROUP1_RUNNING");
