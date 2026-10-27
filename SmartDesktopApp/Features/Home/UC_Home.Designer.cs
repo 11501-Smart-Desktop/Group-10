@@ -37,7 +37,7 @@
             this.label1.Font = new System.Drawing.Font("新細明體", 48F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(136)));
             this.label1.Location = new System.Drawing.Point(0, 0);
             this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(798, 548);
+            this.label1.Size = new System.Drawing.Size(800, 500);
             this.label1.TabIndex = 0;
             this.label1.Text = "歡迎使用智慧桌面";
             this.label1.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
@@ -48,7 +48,7 @@
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.Controls.Add(this.label1);
             this.Name = "UC_Home";
-            this.Size = new System.Drawing.Size(798, 548);
+            this.Size = new System.Drawing.Size(800, 500);
             this.ResumeLayout(false);
 
         }

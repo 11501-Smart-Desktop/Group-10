@@ -1,0 +1,10 @@
+<Project>
+  <PropertyGroup>
+    <!-- 啟用中央套件管理 (CPM) -->
+    <ManagePackageVersionsCentrally>true</ManagePackageVersionsCentrally>
+  </PropertyGroup>
+  <ItemGroup>
+    <!-- 統一在此處管理所有 NuGet 套件的版本 -->
+    <PackageVersion Include="Newtonsoft.Json" Version="13.0.3" />
+  </ItemGroup>
+</Project>

@@ -1,8 +1,18 @@
 {
   "LANG_NAME": "繁體中文",
-  "SYS_TITLE": "智慧桌面",
+  "SYS_TITLE": "智慧桌面 Smart Desktop",
   "SYS_SUBTITLE": "大灣高中 × 三民高中 聯名專案",
   "BTN_HOME": "🏠 回到首頁",
-  "BTN_GROUP1": "第一組：瀏覽器",
-  "LBL_STATUS_READY": "● 系統就緒 | 請選擇功能模組"
+  "BTN_GROUP1": "第1組：教學示範區",
+  "BTN_GROUP2": "第2組：專注計時器",
+  "BTN_GROUP3": "第3組：生活待辦清單",
+  "BTN_GROUP4": "第4組：成績數據分析",
+  "BTN_GROUP5": "第5組：零用錢管理",
+  "BTN_GROUP6": "第6組：2048 小遊戲",
+  "BTN_GROUP7": "第7組：天氣空氣看板",
+  "BTN_GROUP8": "第8組：智慧密碼產生",
+  "BTN_GROUP9": "第9組：硬體狀態監控",
+  "BTN_GROUP10": "第10組：口袋單字卡",
+  "LBL_STATUS_READY": "● 系統就緒 | 請選擇功能模組",
+  "LBL_GROUP1_RUNNING": "● 目前正在執行：第1組 - 教學示範區"
 }

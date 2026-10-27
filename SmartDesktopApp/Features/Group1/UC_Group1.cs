@@ -1,4 +1,8 @@
-﻿using System;
+﻿/// <summary>
+/// Group 1 功能模組入口
+/// 請各組於此處擴充組內專屬功能
+/// </summary>
+using System;
 using System.Collections.Generic;
 using System.ComponentModel;
 using System.Data;
