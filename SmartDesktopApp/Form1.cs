@@ -25,7 +25,7 @@ namespace SmartDesktopApp
             string systemLang = System.Globalization.CultureInfo.CurrentCulture.Name;
 
             // 3. 決定要載入哪一個語系檔
-            string finalLang = "en-US"; // 預設為英文 (Fallback)
+            string finalLang = "zh-TW"; // 預設為繁體中文英文
 
             // 檢查我們有沒有對應系統語系的 JSON 檔 (例如有無 zh-TW.json)
             // 這裡我們比對 AvailableLanguages 字典裡的 Value (檔案名稱)
@@ -44,8 +44,6 @@ namespace SmartDesktopApp
 
             // 5. 填充 ComboBox 並將選單指到目前載入的語系
             FillLanguageComboBox(finalLang);
-
-            ShowModule(new UC_Home());
 
             // 讓程式一打開，右邊就顯示首頁模組
             ShowModule(new UC_Home());
@@ -75,15 +73,20 @@ namespace SmartDesktopApp
 
         private void btnHome_Click(object sender, EventArgs e)
         {
+            // 載入首頁模組
             ShowModule(new UC_Home());
             lblStatus.Text = "● 系統就緒 | 請選擇功能模組";
         }
         private void RefreshUI()
         {
-            // 這裡就是「解耦」：不再直接打字，而是去查字典
+            // 1. 視窗標題與副標題
+            this.Text = Core.LanguageManager.GetString("SYS_TITLE");
             this.lblMainTitle.Text = Core.LanguageManager.GetString("SYS_TITLE");
             this.lblSubtitle.Text = Core.LanguageManager.GetString("SYS_SUBTITLE");
+
+            // 2. 導覽列按鈕 (首頁 + 第1組教學示範 + 第2至10組學生模組)
             this.btnHome.Text = Core.LanguageManager.GetString("BTN_HOME");
+            this.btnModule1.Text = Core.LanguageManager.GetString("BTN_GROUP1"); // 第1組：教學示範區
             this.btnModule2.Text = Core.LanguageManager.GetString("BTN_GROUP2");
             this.btnModule3.Text = Core.LanguageManager.GetString("BTN_GROUP3");
             this.btnModule4.Text = Core.LanguageManager.GetString("BTN_GROUP4");
@@ -93,6 +96,8 @@ namespace SmartDesktopApp
             this.btnModule8.Text = Core.LanguageManager.GetString("BTN_GROUP8");
             this.btnModule9.Text = Core.LanguageManager.GetString("BTN_GROUP9");
             this.btnModule10.Text = Core.LanguageManager.GetString("BTN_GROUP10");
+
+            // 3. 底部狀態列
             this.lblStatus.Text = Core.LanguageManager.GetString("LBL_STATUS_READY");
         }
         
@@ -147,6 +152,16 @@ namespace SmartDesktopApp
             string shortVersion = $"{version.Major}.{version.Minor}.{version.Build}";
             // 或者，如果您有設計一個 label 用來顯示版本：
             lblSubtitle.Text= $"大灣高中 × 沙崙高中 聯名專案 v{shortVersion}" ;
+        }
+
+        private void btnModule1_Click_1(object sender, EventArgs e)
+        {
+            // 1. 執行切換到老師的教學示範模組
+            ShowModule(new UC_Group1());
+            //lblStatus.Text = "● 目前正在執行：第1組 - 教學示範區";
+
+            // 2. 同步更新狀態列文字（建議也用多語系 Key）
+            lblStatus.Text = Core.LanguageManager.GetString("LBL_GROUP1_RUNNING");
         }
     }
 }

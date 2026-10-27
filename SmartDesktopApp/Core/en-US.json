@@ -3,6 +3,16 @@
   "SYS_TITLE": "Smart Desktop",
   "SYS_SUBTITLE": "Dawan x Sanmin High School Project",
   "BTN_HOME": "🏠 Home",
-  "BTN_GROUP1": "G1: Browser",
-  "LBL_STATUS_READY": "● Ready | Please select a module"
+  "BTN_GROUP1": "G1: Teaching Demo",
+  "BTN_GROUP2": "G2: Timer",
+  "BTN_GROUP3": "G3: To-do List",
+  "BTN_GROUP4": "G4: Grades Stats",
+  "BTN_GROUP5": "G5: Pocket Money",
+  "BTN_GROUP6": "G6: 2048 Game",
+  "BTN_GROUP7": "G7: Weather Board",
+  "BTN_GROUP8": "G8: Password Gen",
+  "BTN_GROUP9": "G9: Hardware Monitor",
+  "BTN_GROUP10": "G10: Vocab Cards",
+  "LBL_STATUS_READY": "● Ready | Please select a module",
+  "LBL_GROUP1_RUNNING": "● Running: Group 1 - Teaching Demo"
 }

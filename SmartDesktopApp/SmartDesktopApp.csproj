@@ -33,9 +33,14 @@
     <WarningLevel>4</WarningLevel>
   </PropertyGroup>
   <ItemGroup>
-    <Reference Include="Newtonsoft.Json, Version=13.0.0.0, Culture=neutral, PublicKeyToken=30ad4fe6b2a6aeed, processorArchitecture=MSIL">
+    <!-- 這是舊版的寫法，請把它刪除或註解掉 -->
+    <!--
+	<Reference Include="Newtonsoft.Json, Version=13.0.0.0, Culture=neutral, PublicKeyToken=30ad4fe6b2a6aeed, processorArchitecture=MSIL">
       <HintPath>..\packages\Newtonsoft.Json.13.0.4\lib\net45\Newtonsoft.Json.dll</HintPath>
     </Reference>
+	-->
+	<!-- 注意：這裡絕對不寫 Version 屬性，版本會完全交給剛剛建好的「中央廚房」統籌！ -->
+    <PackageReference Include="Newtonsoft.Json" />
     <Reference Include="System" />
     <Reference Include="System.Core" />
     <Reference Include="System.Xml.Linq" />
@@ -49,6 +54,15 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="Features\Group10\UC_Group10.cs" />
+    <Compile Include="Features\Group2\UC_Group2.cs" />
+    <Compile Include="Features\Group3\UC_Group3.cs" />
+    <Compile Include="Features\Group4\UC_Group4.cs" />
+    <Compile Include="Features\Group5\UC_Group5.cs" />
+    <Compile Include="Features\Group6\UC_Group6.cs" />
+    <Compile Include="Features\Group7\UC_Group7.cs" />
+    <Compile Include="Features\Group8\UC_Group8.cs" />
+    <Compile Include="Features\Group9\UC_Group9.cs" />
     <Compile Include="Form1.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -108,5 +122,6 @@
   <ItemGroup>
     <None Include="App.config" />
   </ItemGroup>
+  <ItemGroup />
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>
