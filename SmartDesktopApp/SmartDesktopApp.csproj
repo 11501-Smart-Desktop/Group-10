@@ -39,7 +39,7 @@
       <HintPath>..\packages\Newtonsoft.Json.13.0.4\lib\net45\Newtonsoft.Json.dll</HintPath>
     </Reference>
 	-->
-	<!-- 注意：這裡絕對不寫 Version 屬性，版本會完全交給剛剛建好的「中央廚房」統籌！ -->
+    <!-- 注意：這裡絕對不寫 Version 屬性，版本會完全交給剛剛建好的「中央廚房」統籌！ -->
     <PackageReference Include="Newtonsoft.Json" />
     <Reference Include="System" />
     <Reference Include="System.Core" />
@@ -55,6 +55,7 @@
   </ItemGroup>
   <ItemGroup>
     <Compile Include="Features\Group10\UC_Group10.cs" />
+    <Compile Include="Features\Group10\VocabularyItem.cs" />
     <Compile Include="Features\Group2\UC_Group2.cs" />
     <Compile Include="Features\Group3\UC_Group3.cs" />
     <Compile Include="Features\Group4\UC_Group4.cs" />
