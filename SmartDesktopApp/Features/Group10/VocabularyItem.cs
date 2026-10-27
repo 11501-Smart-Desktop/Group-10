@@ -4,7 +4,7 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 
-// 檔案：VocabularyItem.cs (大家共用的資料結構)
+// 檔案：VocabularyItem.cs (共用的資料結構)
 namespace SmartDesktopApp.Features.Group10
 {
     public class VocabularyItem
