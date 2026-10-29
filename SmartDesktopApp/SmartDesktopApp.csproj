@@ -54,6 +54,7 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="Features\Group10\DataHandler.cs" />
     <Compile Include="Features\Group10\UC_Group10.cs" />
     <Compile Include="Features\Group10\VocabularyItem.cs" />
     <Compile Include="Features\Group2\UC_Group2.cs" />

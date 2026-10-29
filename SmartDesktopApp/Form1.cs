@@ -10,6 +10,7 @@ using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
 using System.Reflection;
+using SmartDesktopApp.Features.Group10;
 
 namespace SmartDesktopApp
 {
@@ -163,5 +164,7 @@ namespace SmartDesktopApp
             // 2. 同步更新狀態列文字（建議也用多語系 Key）
             lblStatus.Text = Core.LanguageManager.GetString("LBL_GROUP1_RUNNING");
         }
+
+        
     }
 }
