@@ -189,6 +189,7 @@
             this.btnModule10.TabIndex = 10;
             this.btnModule10.Text = "第10組：口袋單字卡";
             this.btnModule10.UseVisualStyleBackColor = true;
+            this.btnModule10.Click += new System.EventHandler(this.btnModule10_Click);
             // 
             // btnModule9
             // 

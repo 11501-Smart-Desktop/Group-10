@@ -54,7 +54,11 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
-    <Compile Include="Features\Group10\UC_Group10.cs" />
+    <Compile Include="Features\Group10\IDataHandler.cs" />
+    <Compile Include="Features\Group10\QuizLogic.cs" />
+    <Compile Include="Features\Group10\UC_Group10.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
     <Compile Include="Features\Group10\VocabularyItem.cs" />
     <Compile Include="Features\Group2\UC_Group2.cs" />
     <Compile Include="Features\Group3\UC_Group3.cs" />
@@ -85,6 +89,9 @@
     <Compile Include="Features\Home\UC_Home.Designer.cs">
       <DependentUpon>UC_Home.cs</DependentUpon>
     </Compile>
+    <EmbeddedResource Include="Features\Group10\UC_Group10.resx">
+      <DependentUpon>UC_Group10.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="Form1.resx">
       <DependentUpon>Form1.cs</DependentUpon>
     </EmbeddedResource>

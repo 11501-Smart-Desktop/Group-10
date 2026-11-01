@@ -10,6 +10,7 @@ using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
 using System.Reflection;
+using SmartDesktopApp.Features.Group10;
 
 namespace SmartDesktopApp
 {
@@ -162,6 +163,16 @@ namespace SmartDesktopApp
 
             // 2. 同步更新狀態列文字（建議也用多語系 Key）
             lblStatus.Text = Core.LanguageManager.GetString("LBL_GROUP1_RUNNING");
+        }
+
+        private void btnModule10_Click(object sender, EventArgs e)
+        {
+            // 1. 執行切換到老師的教學示範模組
+            ShowModule(new UC_Group10());
+            //lblStatus.Text = "● 目前正在執行：第10組 - 口袋單字卡";
+
+            // 2. 同步更新狀態列文字（建議也用多語系 Key）
+            lblStatus.Text = Core.LanguageManager.GetString("LBL_GROUP10_RUNNING");
         }
     }
 }
