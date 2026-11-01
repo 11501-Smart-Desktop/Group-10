@@ -189,6 +189,7 @@
             this.btnModule10.TabIndex = 10;
             this.btnModule10.Text = "第10組：口袋單字卡";
             this.btnModule10.UseVisualStyleBackColor = true;
+            this.btnModule10.Click += new System.EventHandler(this.btnModule10_Click);
             // 
             // btnModule9
             // 
@@ -201,6 +202,7 @@
             this.btnModule9.TabIndex = 9;
             this.btnModule9.Text = "第9組：硬體狀態監控";
             this.btnModule9.UseVisualStyleBackColor = true;
+            this.btnModule9.Click += new System.EventHandler(this.btnModule9_Click);
             // 
             // btnModule8
             // 
@@ -213,6 +215,7 @@
             this.btnModule8.TabIndex = 7;
             this.btnModule8.Text = "第8組：智慧密碼產生";
             this.btnModule8.UseVisualStyleBackColor = true;
+            this.btnModule8.Click += new System.EventHandler(this.btnModule8_Click);
             // 
             // btnModule7
             // 
@@ -225,6 +228,7 @@
             this.btnModule7.TabIndex = 6;
             this.btnModule7.Text = " 第7組：天氣空氣看板";
             this.btnModule7.UseVisualStyleBackColor = true;
+            this.btnModule7.Click += new System.EventHandler(this.btnModule7_Click);
             // 
             // btnModule6
             // 
@@ -237,6 +241,7 @@
             this.btnModule6.TabIndex = 5;
             this.btnModule6.Text = "第6組：2048 小遊戲";
             this.btnModule6.UseVisualStyleBackColor = true;
+            this.btnModule6.Click += new System.EventHandler(this.btnModule6_Click);
             // 
             // btnModule5
             // 
@@ -249,6 +254,7 @@
             this.btnModule5.TabIndex = 4;
             this.btnModule5.Text = "第5組：零用錢管理";
             this.btnModule5.UseVisualStyleBackColor = true;
+            this.btnModule5.Click += new System.EventHandler(this.btnModule5_Click);
             // 
             // btnModule4
             // 
@@ -261,6 +267,7 @@
             this.btnModule4.TabIndex = 3;
             this.btnModule4.Text = "第4組：成績數據分析";
             this.btnModule4.UseVisualStyleBackColor = true;
+            this.btnModule4.Click += new System.EventHandler(this.btnModule4_Click);
             // 
             // btnModule3
             // 
@@ -273,6 +280,7 @@
             this.btnModule3.TabIndex = 2;
             this.btnModule3.Text = "第3組：生活待辦清單";
             this.btnModule3.UseVisualStyleBackColor = true;
+            this.btnModule3.Click += new System.EventHandler(this.btnModule3_Click);
             // 
             // btnModule2
             // 

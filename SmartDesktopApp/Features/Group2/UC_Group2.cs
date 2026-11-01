@@ -7,10 +7,15 @@ using System.Collections.Generic;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
+using System.Windows.Forms;
 
 namespace SmartDesktopApp.Features.Group2
 {
-    public class UC_Group2
+    public class UC_Group2 : UserControl
     {
+        public UC_Group2()
+        {
+            
+        }
     }
 }

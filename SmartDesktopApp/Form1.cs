@@ -1,4 +1,13 @@
 ﻿using SmartDesktopApp.Features.Group1;
+using SmartDesktopApp.Features.Group2;
+using SmartDesktopApp.Features.Group3;
+using SmartDesktopApp.Features.Group4;
+using SmartDesktopApp.Features.Group5;
+using SmartDesktopApp.Features.Group6;
+using SmartDesktopApp.Features.Group7;
+using SmartDesktopApp.Features.Group8;
+using SmartDesktopApp.Features.Group9;
+using SmartDesktopApp.Features.Group10;
 using SmartDesktopApp.Features.Home;
 using System;
 using System.Collections.Generic;
@@ -142,7 +151,12 @@ namespace SmartDesktopApp
 
         private void btnModule2_Click(object sender, EventArgs e)
         {
+            // 1. 執行切換到第2組：專注計時器模組
+            ShowModule(new UC_Group2());
+            //lblStatus.Text = "● 目前正在執行：第2組：專注計時器";
 
+            // 2. 同步更新狀態列文字（建議也用多語系 Key）
+            lblStatus.Text = Core.LanguageManager.GetString("LBL_GROUP2_RUNNING");
         }
 
         private void Form1_Load(object sender, EventArgs e)
@@ -162,6 +176,86 @@ namespace SmartDesktopApp
 
             // 2. 同步更新狀態列文字（建議也用多語系 Key）
             lblStatus.Text = Core.LanguageManager.GetString("LBL_GROUP1_RUNNING");
+        }
+
+        private void btnModule3_Click(object sender, EventArgs e)
+        {
+            // 1. 執行切換到第3組：生活待辦清單模組
+            ShowModule(new UC_Group3());
+            //lblStatus.Text = "● 目前正在執行：第3組：生活待辦清單";
+
+            // 2. 同步更新狀態列文字（建議也用多語系 Key）
+            lblStatus.Text = Core.LanguageManager.GetString("LBL_GROUP3_RUNNING");
+        }
+
+        private void btnModule4_Click(object sender, EventArgs e)
+        {
+            // 1. 執行切換到第4組：成績數據分析模組
+            ShowModule(new UC_Group4());
+            //lblStatus.Text = "● 目前正在執行：第4組：成績數據分析";
+
+            // 2. 同步更新狀態列文字（建議也用多語系 Key）
+            lblStatus.Text = Core.LanguageManager.GetString("LBL_GROUP4_RUNNING");
+        }
+
+        private void btnModule5_Click(object sender, EventArgs e)
+        {
+            // 1. 執行切換到第5組：零用錢管理模組
+            ShowModule(new UC_Group5());
+            //lblStatus.Text = "● 目前正在執行：第5組：零用錢管理";
+
+            // 2. 同步更新狀態列文字（建議也用多語系 Key）
+            lblStatus.Text = Core.LanguageManager.GetString("LBL_GROUP5_RUNNING");
+        }
+
+        private void btnModule6_Click(object sender, EventArgs e)
+        {
+            // 1. 執行切換到第6組：2048 小遊戲模組
+            ShowModule(new UC_Group6());
+            //lblStatus.Text = "● 目前正在執行：第6組：2048 小遊戲";
+
+            // 2. 同步更新狀態列文字（建議也用多語系 Key）
+            lblStatus.Text = Core.LanguageManager.GetString("LBL_GROUP6_RUNNING");
+        }
+
+        private void btnModule7_Click(object sender, EventArgs e)
+        {
+            // 1. 執行切換到第7組：天氣空氣看板模組
+            ShowModule(new UC_Group7());
+            //lblStatus.Text = "● 目前正在執行：第7組：天氣空氣看板";
+
+            // 2. 同步更新狀態列文字（建議也用多語系 Key）
+            lblStatus.Text = Core.LanguageManager.GetString("LBL_GROUP7_RUNNING");
+        }
+
+        private void btnModule8_Click(object sender, EventArgs e)
+        {
+            // 1. 執行切換到第8組：智慧密碼產生模組
+            ShowModule(new UC_Group8());
+            //lblStatus.Text = "● 目前正在執行：第8組：智慧密碼產生";
+
+            // 2. 同步更新狀態列文字（建議也用多語系 Key）
+            lblStatus.Text = Core.LanguageManager.GetString("LBL_GROUP8_RUNNING");
+        }
+
+        private void btnModule9_Click(object sender, EventArgs e)
+        {
+            // 1. 執行切換到第9組：硬體狀態監控模組
+            ShowModule(new UC_Group9());
+            //lblStatus.Text = "● 目前正在執行：第9組：硬體狀態監控";
+
+            // 2. 同步更新狀態列文字（建議也用多語系 Key）
+            lblStatus.Text = Core.LanguageManager.GetString("LBL_GROUP9_RUNNING");
+        }
+
+        private void btnModule10_Click(object sender, EventArgs e)
+        {
+            // 1. 執行切換到第10組：口袋單字卡模組
+            ShowModule(new UC_Group10());
+            //lblStatus.Text = "● 目前正在執行：第10組：口袋單字卡";
+
+            // 2. 同步更新狀態列文字（建議也用多語系 Key）
+            lblStatus.Text = Core.LanguageManager.GetString("LBL_GROUP10_RUNNING");
         }
     }
 }
