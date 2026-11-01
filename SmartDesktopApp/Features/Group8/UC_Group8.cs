@@ -7,10 +7,16 @@ using System.Collections.Generic;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
+using System.Windows.Forms;
 
 namespace SmartDesktopApp.Features.Group8
 {
-    public class UC_Group8
+    public class UC_Group8 : UserControl
     {
+        public UC_Group8()
+        {
+
+        }
+    
     }
 }
